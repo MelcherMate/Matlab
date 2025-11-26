@@ -22,12 +22,12 @@ higher = 0;
 for i = 1:20
     r1 = randi(10,1);
     r2 = randi(10,1);
-    [r1, r2]
+    [r1, r2];
     if r1 < r2
         lower = lower + 1;
     elseif r1 == r2
         equal = equal + 1;
-    else r1 > r2
+    else
         higher = higher + 1;
     end
 end
@@ -82,7 +82,7 @@ D = -1;
 B = 10;
 phi = 90; % degrees
 
-formulaB = abs( (A * D) / 2 * log( exp( asin( sind(phi) ) / log(B))))
+formulaB = abs( (A * D) / 2 * log( exp( asin( sind(phi) ) / log(B))));
 
 disp("The result of the formula is: " + string(formulaB));
 disp("--------------------------");
@@ -109,17 +109,13 @@ Asum = sum(A);
 disp("The sum of all values in A is: " + string(Asum));
 
 %A3
-A3 = A(1:3);
-disp("The first three elements of A are: " + string(A3));
+A3 = A(1:3)
 
 %A235
-A235 = A([2,3,5]);
-disp("The 2nd, 3rd, and 5th elements of A are: " + string(A235));
+A235 = A([2,3,5])
 
 %AB
-AB = [A B];
-disp("The product of A and B is: " + string(AB));
+AB = [A B]
 
 %BB
-BB = [B*10 B*14];
-disp("The product of B multiplied by 10 and 14 is: " + string(BB));
+BB = [B*10 B*14]
