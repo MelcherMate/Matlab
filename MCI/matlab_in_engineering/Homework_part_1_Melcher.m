@@ -104,7 +104,7 @@ disp("The minimum value in A is: " + string(Amin));
 Amean = mean(A);
 disp("The mean value of A is: " + string(Amean));
 
-%sumA
+%Asum
 Asum = sum(A);
 disp("The sum of all values in A is: " + string(Asum));
 
