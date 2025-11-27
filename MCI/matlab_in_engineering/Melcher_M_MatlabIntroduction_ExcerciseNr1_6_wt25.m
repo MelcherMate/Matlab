@@ -23,7 +23,7 @@ higher = 0;
 for i = 1:20
     r1 = randi(10,1);
     r2 = randi(10,1);
-    [r1, r2];
+    disp([r1, r2]);
     if r1 < r2
         lower = lower + 1;
     elseif r1 == r2
