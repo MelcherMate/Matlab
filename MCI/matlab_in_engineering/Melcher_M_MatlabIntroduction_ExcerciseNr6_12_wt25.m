@@ -1,15 +1,47 @@
+% Task 7
+disp("--------- Task 7 ---------")
+A = [2 7 9];
+B = [13 12 15];
+
+% a)
+disp("-- part a --")
+dot_AB = dot(A, B);
+manual_dot = A * B';
+disp(string(dot_AB));
+
+% b)
+disp("-- part b --")
+component_mult = A .* B;
+disp(string(component_mult));
+
+% c)
+disp("-- part c --")
+component_add = A + B;
+disp(string(component_add));
+disp("--------------------------");
 % Task 8
 
 disp("--------- Task 8 ---------")
-first_name= 'Kurt';
-surename= 'Miller';
+
+first_name = 'Kurt';
+surname    = 'Miller';
 age = 23;
 
-full_name= [first_name, ' ', surename]
+% a)
+full_name = [first_name, ' ', surname]
 
-name(1) = 'G';
+% b) 
+first_name(1) = 'G';
+first_name
 
-message = strcat(first_name, ' is', 32, num2str(age), ' years old.');
+% c) 
+last_of_miller = 'miller';
+comparison = (surname(1) == last_of_miller(end))
+
+% d) 
+message = [lower(first_name) ' is ' num2str(age) ' years old']
+
+disp("--------------------------")
 
 disp("--------------------------")
 
@@ -86,4 +118,18 @@ B = [2 ; -1 ; 3];
 X = inv(A) * B;
 disp("The solution X is:")
 disp(string(X));
+disp("--------------------------");
+
+% Task 12
+disp("--------- Task 12 ---------")
+disp("--part a--")
+main_diag = -2 * ones(1,5);
+upper_diag = 1 * ones(1,4);
+lower_diag = 1 * ones(1,4);
+
+M = diag(main_diag) + diag(upper_diag,1) + diag(lower_diag,-1)
+
+disp("--part b--")
+Msparse = sparse(M)
+
 disp("--------------------------");
