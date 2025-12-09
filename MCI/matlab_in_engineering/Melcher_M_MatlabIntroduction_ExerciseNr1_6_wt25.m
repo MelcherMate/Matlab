@@ -118,7 +118,7 @@ A235 = A([2,3,5])
 AB = [A B]
 
 %BB
-BB = [B*10 B*14]
+BB = [B*10 B*14] %#ok<NASGU>
 
 %ABB
 BB = [B 10 14]
