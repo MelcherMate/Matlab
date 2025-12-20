@@ -1,6 +1,5 @@
-function christmas_tree()
+function gift()
 clc
-disp('Simple ASCII Christmas Tree')
 disp('')
 
 % Height
