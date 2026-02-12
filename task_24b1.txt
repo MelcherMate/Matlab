@@ -1,4 +1,0 @@
-Number	First name	Surname	Age
-1	Carl	Sagan	67
-2	Wernher	von Braun	88
-3	Szergej	Koroljov	71
